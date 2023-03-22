@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: top;
+    padding: 15px;
+  }
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  
+  body {
+    background-color: #f0edea;
+  }
+
+  .header {
+    background-color: #323038;
+    color: #ffffff;
+    padding: 13px;
+  }
+
+  
+
+  .menu ul {
+    background-color: #3f4139;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 9px;
+    font-size: 20px;
+    list-style: none;
+    display: inline-block;
+  }
+
+  .menu li:hover {
+    background-color: #b4c080;
+  }
+  
+  .welcome {
+    background-image: url("resource/beauty-saloon-569111_1280.jpg");
+    background-color: #b9b9ad;
+    padding: 15px;
+    color: #64572d;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+
+
+  .aside {
+    background-image: url("beauty-saloon-569111_1280.jpg");
+    background-color: #a6db9f;
+    padding: 15px;
+    color: #64572d;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
+  }
+  
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    margin: auto;
+    display: block;
+  }
+
+  /* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(139, 131, 131) transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  
+  /* The alert message box */
+    .alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }
+
+
+
+  /*Contact us*/
+
+  .form {
+    background-image: url("resource/beauty-saloon-569111_1280.jpg");
+    background-color: #b9b9ad;
+    padding: 15px;
+    color: #64572d;
+    text-align: left;
+    font-size: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  input[type=submit]{
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #b9b0b0;
+    resize: none;
+  }
+  input[type=text]:focus {
+    background-color: lightblue;
+  }
+  select {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #b9b0b0;
+  }
+
+  .notice {
+    background-color: #cfb5db;
+    color: #241525;
+    padding: 15px;
+  }
+
+  .protections{
+    background-color: #dacab8;
+    color: #241525;
+    padding: 15px;
+  }
+
+
+
+  /*link*/
+  a:link {
+    color: rgb(149, 155, 149);
+    background-color: none;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(184, 194, 184);
+    background-color: none;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: hotpink;
+    background-color: none;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: blue;
+    background-color: none;
+    text-decoration: underline;
+  }
+
+  /*.alert a:link, a:visited {
+    color: rgb(224, 219, 219);
+    background-color: none;
+    text-decoration: none;
+  }*/
+
+  /*footer*/
+
+  .footer{
+    padding: 17px;
+    background-color: #6e5755; 
+    color: white;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 12px;
+  }
+
+  .footer img{
+    max-width: 3%;
+    height: auto;
+    
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+
+.float{
+	position:fixed;
+	width:30px;
+	height:auto;
+	bottom:40px;
+	right:40px;
+	background-color:rgb(167, 151, 132);
+	color:rgb(136, 130, 130);
+	border-radius:30px;
+	text-align:center;
+	box-shadow: 1px 1px 2px #999;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+
+/*Service*/
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .left {
+    position: absolute;
+    top: 12px;
+    left: 10%;
+  }
+
+  .container2 {
+    position: relative;
+    text-align: left;
+    color: rgb(48, 44, 44);
+  }
+
+  .prop-text{font-size:2.0vw}
+    @media (max-width : 768px) {
+    .prop-text{font-size:2.0vw}
+    }
